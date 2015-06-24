@@ -1,0 +1,13 @@
+New log file opened at Wed Jun 24 12:04:20 CEST 2015 by 3191@Mac-mini-026.local
+Taking next connection to: 53080
+New client attempting to connect on port: 53081-53080
+  Address = /192.168.1.179:53080
+This client on port 53081 has uuid 9eb83d40-2973-4eff-adb0-b3b3b25ea529 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-9eb83d40-2973-4eff-adb0-b3b3b25ea529
+Taking next connection to: 53080
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 53080
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 53080

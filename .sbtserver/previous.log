@@ -1,0 +1,1397 @@
+New log file opened at Wed Jun 24 11:36:02 CEST 2015 by 3047@Mac-mini-026.local
+jvm 3047@Mac-mini-026.local
+jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.45-b02
+jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
+jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
+Starting event engine
+Starting sbt command engine
+Command engine arguments=List()
+Command engine baseDirectory=/Users/abarczewski/Documents/workspace/reactive-java8-play
+Waiting for sbt command engine
+Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
+> --initialize
+> initialize
+> onFailure load-failed
+> boot
+> reload
+[Loading] Scanning directory /Users/abarczewski/Documents/workspace/reactive-java8-play/project
+[Loading] Found non-root projects 
+[Loading] Done in /Users/abarczewski/Documents/workspace/reactive-java8-play/project, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in /Users/abarczewski/Documents/workspace/reactive-java8-play/project, returning: (reactive-java8-play-build)
+Loading project definition from /Users/abarczewski/Documents/workspace/reactive-java8-play/project
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@33f74d61, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+[Loading] Scanning directory /Users/abarczewski/Documents/workspace/reactive-java8-play
+[Loading] Found non-root projects 
+[Loading] Done in /Users/abarczewski/Documents/workspace/reactive-java8-play, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.BackgroundRunPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.InteractionServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SendEventServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SerializersPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.SerializersPlugin,sbt.plugins.SendEventServicePlugin,sbt.plugins.InteractionServicePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.BackgroundRunPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in /Users/abarczewski/Documents/workspace/reactive-java8-play, returning: (reactive-java8-play)
+Set current project to reactive-java8-play (in build file:/Users/abarczewski/Documents/workspace/reactive-java8-play/)
+Reapplying settings...
+Set current project to reactive-java8-play (in build file:/Users/abarczewski/Documents/workspace/reactive-java8-play/)
+> iflast shell
+> server-send-ready-for-request
+> server-handle-next-server-request
+> {file:/Users/abarczewski/Documents/workspace/reactive-java8-play/}reactive-java8-play/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@69a5e55b, check cycles: false
+Total time: 0 s, completed Jun 24, 2015 11:36:08 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/abarczewski/Documents/workspace/reactive-java8-play/}reactive-java8-play/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@602c6899, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Jun 24, 2015 11:36:09 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/abarczewski/Documents/workspace/reactive-java8-play/}reactive-java8-play/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@1baacf70, check cycles: false
+Total time: 0 s, completed Jun 24, 2015 11:36:10 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@6d2b0755, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/application.conf,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/application.conf)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/routes)
+Copy play resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/public/images/favicon.png,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+Total time: 1 s, completed Jun 24, 2015 11:36:13 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+Play server process ID is 3047
+This application is already running (Or delete /Users/abarczewski/Documents/workspace/reactive-java8-play/RUNNING_PID file).
+Exception in thread "sbt-bg-threads-1" java.lang.RuntimeException: Nonzero exit code: -1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@1ee1fbdd, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy play resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/public/images/favicon.png,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+Copy resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/application.conf,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/application.conf)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/routes)
+Play server process ID is 3047
+Total time: 1 s, completed Jun 24, 2015 11:36:59 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+[info] play - Application started (Prod)
+[info] play - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@75aec6e7, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/index.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/index.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/index.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes...
+Compiling 1 Scala source to /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes...
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Running cached compiler 6985bd2a, interfacing (CompilerInterface) with Scala compiler version 2.10.3
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/classes:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	-classpath
+	/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes:/Users/abarczewski/.ivy2/cache/org.webjars/webjars-play_2.10/jars/webjars-play_2.10-2.2.0.jar:/Users/abarczewski/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.8.jar:/Users/abarczewski/.ivy2/cache/org.webjars/webjars-locator/jars/webjars-locator-0.5.jar:/Users/abarczewski/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-2.3.1.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.webjars/jquery/1.9.0/jars/jquery.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.2.jar:/Users/abarczewski/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar:/Users/abarczewski/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar:/Users/abarczewski/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar:/Users/abarczewski/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar:/Users/abarczewski/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar:/Users/abarczewski/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar:/Users/abarczewski/.ivy2/cache/io.netty/netty/bundles/netty-3.7.0.Final.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar:/Users/abarczewski/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar:/Users/abarczewski/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar:/Users/abarczewski/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/Users/abarczewski/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar:/Users/abarczewski/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/abarczewski/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar:/Users/abarczewski/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/abarczewski/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar:/Users/abarczewski/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/abarczewski/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/abarczewski/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/abarczewski/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/abarczewski/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.2.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar:/Users/abarczewski/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar:/Users/abarczewski/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar:/Users/abarczewski/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar:/Users/abarczewski/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar:/Users/abarczewski/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/abarczewski/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/abarczewski/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar:/Users/abarczewski/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/abarczewski/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar
+Scala compilation took 4.932844612 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 7 s, completed Jun 24, 2015 11:38:02 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 2
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@17f14d28, check cycles: false
+Total time: 0 s, completed Jun 24, 2015 11:38:02 AM
+> server-post-command-cleanup
+Exception in thread "sbt-bg-threads-3" java.lang.RuntimeException: Nonzero exit code: 1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@404f630e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/application.conf,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/application.conf)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/routes)
+Copy play resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/public/images/favicon.png,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+Play server process ID is 3047
+This application is already running (Or delete /Users/abarczewski/Documents/workspace/reactive-java8-play/RUNNING_PID file).
+Exception in thread "sbt-bg-threads-4" java.lang.RuntimeException: Nonzero exit code: -1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Total time: 1 s, completed Jun 24, 2015 11:38:04 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@7b1fddc3, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy play resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/public/images/favicon.png,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+Copy resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/application.conf,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/application.conf)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/routes)
+Play server process ID is 3047
+Total time: 1 s, completed Jun 24, 2015 11:38:24 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+[info] play - Application started (Prod)
+Oops, cannot start the server.
+org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:9000
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at play.core.server.NettyServer$$anonfun$10.apply(NettyServer.scala:134)
+	at play.core.server.NettyServer$$anonfun$10.apply(NettyServer.scala:131)
+	at scala.Option.map(Option.scala:145)
+	at play.core.server.NettyServer.<init>(NettyServer.scala:131)
+	at play.core.server.NettyServer$.createServer(NettyServer.scala:242)
+	at play.core.server.NettyServer$$anonfun$main$3.apply(NettyServer.scala:279)
+	at play.core.server.NettyServer$$anonfun$main$3.apply(NettyServer.scala:274)
+	at scala.Option.map(Option.scala:145)
+	at play.core.server.NettyServer$.main(NettyServer.scala:274)
+	at play.core.server.NettyServer.main(NettyServer.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at sbt.Run.invokeMain(Run.scala:67)
+	at sbt.Run.run0(Run.scala:61)
+	at sbt.Run.sbt$Run$$execute$1(Run.scala:51)
+	at sbt.Run$$anonfun$run$1.apply$mcV$sp(Run.scala:55)
+	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
+	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
+	at sbt.Logger$$anon$4.apply(Logger.scala:85)
+	at sbt.TrapExit$App.run(TrapExit.scala:248)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:366)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:290)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@300366f6, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Jun 24, 2015 11:38:32 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 4
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@42c0f8bb, check cycles: false
+Total time: 0 s, completed Jun 24, 2015 11:38:32 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@6fca39b0, check cycles: false
+Exception in thread "sbt-bg-threads-6" java.lang.RuntimeException: Nonzero exit code: 1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/application.conf,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/application.conf)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/routes)
+Copy play resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/public/images/favicon.png,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+Play server process ID is 3047
+This application is already running (Or delete /Users/abarczewski/Documents/workspace/reactive-java8-play/RUNNING_PID file).
+Exception in thread "sbt-bg-threads-7" java.lang.RuntimeException: Nonzero exit code: -1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Total time: 1 s, completed Jun 24, 2015 11:38:34 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@5cf7c9d6, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy play resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/public/images/favicon.png,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+Copy resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/application.conf,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/application.conf)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/routes)
+Play server process ID is 3047
+This application is already running (Or delete /Users/abarczewski/Documents/workspace/reactive-java8-play/RUNNING_PID file).
+Exception in thread "sbt-bg-threads-9" java.lang.RuntimeException: Nonzero exit code: -1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Total time: 1 s, completed Jun 24, 2015 11:38:39 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@2f36bbc, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy play resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/public/images/favicon.png,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+Copy resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/application.conf,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/application.conf)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/routes)
+Play server process ID is 3047
+Total time: 1 s, completed Jun 24, 2015 11:39:01 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+[info] play - Application started (Prod)
+[info] play - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@72b986c2, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/index.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/index.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/index.template.scala)
+
+Read from stdout: Compiling 1 Scala source and 1 Java source to /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes...
+Compiling 1 Scala source and 1 Java source to /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes...
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Running cached compiler 5ace9dad, interfacing (CompilerInterface) with Scala compiler version 2.10.3
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/classes:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	-classpath
+	/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes:/Users/abarczewski/.ivy2/cache/org.webjars/webjars-play_2.10/jars/webjars-play_2.10-2.2.0.jar:/Users/abarczewski/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.8.jar:/Users/abarczewski/.ivy2/cache/org.webjars/webjars-locator/jars/webjars-locator-0.5.jar:/Users/abarczewski/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-2.3.1.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.webjars/jquery/1.9.0/jars/jquery.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.2.jar:/Users/abarczewski/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar:/Users/abarczewski/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar:/Users/abarczewski/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar:/Users/abarczewski/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar:/Users/abarczewski/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar:/Users/abarczewski/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar:/Users/abarczewski/.ivy2/cache/io.netty/netty/bundles/netty-3.7.0.Final.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar:/Users/abarczewski/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar:/Users/abarczewski/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar:/Users/abarczewski/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/Users/abarczewski/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar:/Users/abarczewski/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/abarczewski/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar:/Users/abarczewski/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/abarczewski/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar:/Users/abarczewski/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/abarczewski/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/abarczewski/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/abarczewski/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/abarczewski/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.2.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar:/Users/abarczewski/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar:/Users/abarczewski/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar:/Users/abarczewski/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar:/Users/abarczewski/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar:/Users/abarczewski/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/abarczewski/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/abarczewski/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar:/Users/abarczewski/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/abarczewski/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar
+Scala compilation took 8.580748499 s
+Attempting to call com.sun.tools.javac.api.JavacTool@6d130420 directly...
+Java compilation took 3.971648801 s
+Java analysis took 0.815386102 s
+Java compile + analysis took 4.835539758 s
+Invalidating /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java...
+Invalidating (transitively) by inheritance from /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java...
+Initial set of included nodes: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java)
+Invalidated by transitive inheritance dependency: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java)
+The /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java source file has the following regular definitions changed:
+	reactiveRequest, lambda$asyncFoo$0, lambda$null$3, syncFoo, lambda$reactiveComposition$4, lambda$reactiveRequest$2, asyncFoo, reactiveComposition, asyncNonBlockingFoo, lambda$asyncNonBlockingFoo$1.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java
+The following modified names cause invalidation of /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala: Set(reactiveRequest, syncFoo, asyncFoo, reactiveComposition, asyncNonBlockingFoo)
+The following modified names cause invalidation of /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala: Set(reactiveRequest, syncFoo, asyncFoo, reactiveComposition, asyncNonBlockingFoo)
+New invalidations:
+	Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala)
+Initial set of included nodes: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala)
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/index.template.scala by /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java by /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/index.template.scala
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala by /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/controllers/routes.java by /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/main.template.scala by /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/controllers/routes.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala)
+Read from stdout: Compiling 2 Scala sources and 1 Java source to /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes...
+Compiling 2 Scala sources and 1 Java source to /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes...
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Running cached compiler 55edc502, interfacing (CompilerInterface) with Scala compiler version 2.10.3
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/classes:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	-classpath
+	/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes:/Users/abarczewski/.ivy2/cache/org.webjars/webjars-play_2.10/jars/webjars-play_2.10-2.2.0.jar:/Users/abarczewski/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.8.jar:/Users/abarczewski/.ivy2/cache/org.webjars/webjars-locator/jars/webjars-locator-0.5.jar:/Users/abarczewski/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-2.3.1.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.webjars/jquery/1.9.0/jars/jquery.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.2.jar:/Users/abarczewski/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar:/Users/abarczewski/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar:/Users/abarczewski/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar:/Users/abarczewski/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar:/Users/abarczewski/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar:/Users/abarczewski/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar:/Users/abarczewski/.ivy2/cache/io.netty/netty/bundles/netty-3.7.0.Final.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar:/Users/abarczewski/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar:/Users/abarczewski/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar:/Users/abarczewski/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/Users/abarczewski/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar:/Users/abarczewski/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/abarczewski/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar:/Users/abarczewski/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/abarczewski/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar:/Users/abarczewski/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/abarczewski/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/abarczewski/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/abarczewski/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/abarczewski/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.2.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar:/Users/abarczewski/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar:/Users/abarczewski/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar:/Users/abarczewski/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar:/Users/abarczewski/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar:/Users/abarczewski/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/abarczewski/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/abarczewski/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar:/Users/abarczewski/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/abarczewski/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar
+Read from stdout: /Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:10: value reactiveRequest is not a member of object controllers.Application
+/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:10: value reactiveRequest is not a member of object controllers.Application
+Read from stdout: GET        /reactive-request              controllers.Application.reactiveRequest()
+GET        /reactive-request              controllers.Application.reactiveRequest()
+Read from stdout: /Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:11: value reactiveComposition is not a member of object controllers.Application
+/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:11: value reactiveComposition is not a member of object controllers.Application
+Read from stdout: GET        /reactive-composition          controllers.Application.reactiveComposition()
+GET        /reactive-composition          controllers.Application.reactiveComposition()
+Read from stdout: /Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:9: value asyncNonBlockingFoo is not a member of object controllers.Application
+/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:9: value asyncNonBlockingFoo is not a member of object controllers.Application
+Read from stdout: GET        /async-non-blocking-foo        controllers.Application.asyncNonBlockingFoo()
+GET        /async-non-blocking-foo        controllers.Application.asyncNonBlockingFoo()
+Read from stdout: /Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:8: value asyncFoo is not a member of object controllers.Application
+/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:8: value asyncFoo is not a member of object controllers.Application
+Read from stdout: GET        /async-foo                     controllers.Application.asyncFoo()
+GET        /async-foo                     controllers.Application.asyncFoo()
+Read from stdout: /Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:7: value syncFoo is not a member of object controllers.Application
+/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:7: value syncFoo is not a member of object controllers.Application
+Read from stdout: GET        /sync-foo                      controllers.Application.syncFoo()
+GET        /sync-foo                      controllers.Application.syncFoo()
+Read from stdout: /Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:7: value syncFoo is not a member of object controllers.Application
+/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:7: value syncFoo is not a member of object controllers.Application
+Read from stdout: GET        /sync-foo                      controllers.Application.syncFoo()
+GET        /sync-foo                      controllers.Application.syncFoo()
+Read from stdout: /Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:8: value asyncFoo is not a member of object controllers.Application
+/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:8: value asyncFoo is not a member of object controllers.Application
+Read from stdout: GET        /async-foo                     controllers.Application.asyncFoo()
+GET        /async-foo                     controllers.Application.asyncFoo()
+Read from stdout: /Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:9: value asyncNonBlockingFoo is not a member of object controllers.Application
+/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:9: value asyncNonBlockingFoo is not a member of object controllers.Application
+Read from stdout: GET        /async-non-blocking-foo        controllers.Application.asyncNonBlockingFoo()
+GET        /async-non-blocking-foo        controllers.Application.asyncNonBlockingFoo()
+Read from stdout: /Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:10: value reactiveRequest is not a member of object controllers.Application
+/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:10: value reactiveRequest is not a member of object controllers.Application
+Read from stdout: GET        /reactive-request              controllers.Application.reactiveRequest()
+GET        /reactive-request              controllers.Application.reactiveRequest()
+Read from stdout: /Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:11: value reactiveComposition is not a member of object controllers.Application
+/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:11: value reactiveComposition is not a member of object controllers.Application
+Read from stdout: GET        /reactive-composition          controllers.Application.reactiveComposition()
+GET        /reactive-composition          controllers.Application.reactiveComposition()
+Read from stdout: 10 errors found
+10 errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 23 s, completed Jun 24, 2015 11:43:23 AM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@65167ccd, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/index.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/index.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/index.template.scala)
+
+Recompiling all 6 sources: invalidated sources (5) exceeded 50.0% of all sources
+Read from stdout: Compiling 4 Scala sources and 2 Java sources to /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes...
+Compiling 4 Scala sources and 2 Java sources to /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes...
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Running cached compiler 432e422a, interfacing (CompilerInterface) with Scala compiler version 2.10.3
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/classes:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	-classpath
+	/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes:/Users/abarczewski/.ivy2/cache/org.webjars/webjars-play_2.10/jars/webjars-play_2.10-2.2.0.jar:/Users/abarczewski/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.8.jar:/Users/abarczewski/.ivy2/cache/org.webjars/webjars-locator/jars/webjars-locator-0.5.jar:/Users/abarczewski/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-2.3.1.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.webjars/jquery/1.9.0/jars/jquery.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.2.jar:/Users/abarczewski/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar:/Users/abarczewski/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar:/Users/abarczewski/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar:/Users/abarczewski/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar:/Users/abarczewski/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar:/Users/abarczewski/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar:/Users/abarczewski/.ivy2/cache/io.netty/netty/bundles/netty-3.7.0.Final.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar:/Users/abarczewski/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar:/Users/abarczewski/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar:/Users/abarczewski/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/Users/abarczewski/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar:/Users/abarczewski/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/abarczewski/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar:/Users/abarczewski/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/abarczewski/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar:/Users/abarczewski/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/abarczewski/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/abarczewski/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/abarczewski/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/abarczewski/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.2.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar:/Users/abarczewski/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar:/Users/abarczewski/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar:/Users/abarczewski/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar:/Users/abarczewski/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar:/Users/abarczewski/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/abarczewski/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/abarczewski/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar:/Users/abarczewski/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/abarczewski/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar
+Scala compilation took 25.577866175 s
+Attempting to call com.sun.tools.javac.api.JavacTool@729915c directly...
+Java compilation took 0.544077094 s
+Java analysis took 0.511890388 s
+Java compile + analysis took 1.060331211 s
+Invalidating /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala...
+Invalidating (transitively) by inheritance from /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala...
+Initial set of included nodes: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala)
+The /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala source file has the following regular definitions changed:
+	reactiveRequest, syncFoo, asyncFoo, reactiveComposition, asyncNonBlockingFoo.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/controllers/routes.java
+None of the modified names appears in /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/index.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/main.template.scala. This dependency is not being considered for invalidation.
+Invalidating /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java...
+Invalidating (transitively) by inheritance from /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java...
+Initial set of included nodes: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java)
+Invalidated by transitive inheritance dependency: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java)
+The /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java source file has the following regular definitions changed:
+	reactiveRequest, lambda$asyncFoo$0, lambda$null$3, syncFoo, lambda$reactiveComposition$4, lambda$reactiveRequest$2, asyncFoo, reactiveComposition, asyncNonBlockingFoo, lambda$asyncNonBlockingFoo$1.
+All member reference dependencies will be considered within this context.
+None of the modified names appears in /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala. This dependency is not being considered for invalidation.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java
+None of the modified names appears in /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala. This dependency is not being considered for invalidation.
+New invalidations:
+	Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/controllers/routes.java)
+Initial set of included nodes: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/controllers/routes.java)
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/index.template.scala by /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/controllers/routes.java
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java by /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/index.template.scala
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala by /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala by /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/main.template.scala by /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 29 s, completed Jun 24, 2015 11:45:16 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 7
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@14cca6af, check cycles: false
+Total time: 0 s, completed Jun 24, 2015 11:45:16 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@4d8bbd6, check cycles: false
+Exception in thread "sbt-bg-threads-11" java.lang.RuntimeException: Nonzero exit code: 1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/application.conf,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/application.conf)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/routes)
+Copy play resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/public/images/favicon.png,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+Play server process ID is 3047
+This application is already running (Or delete /Users/abarczewski/Documents/workspace/reactive-java8-play/RUNNING_PID file).
+Exception in thread "sbt-bg-threads-13" java.lang.RuntimeException: Nonzero exit code: -1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Total time: 13 s, completed Jun 24, 2015 11:45:29 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@2c17ebb4, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy play resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/public/images/favicon.png,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+Copy resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/application.conf,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/application.conf)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/routes)
+Play server process ID is 3047
+Total time: 2 s, completed Jun 24, 2015 11:45:40 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+[info] play - Application started (Prod)
+Oops, cannot start the server.
+org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:9000
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at play.core.server.NettyServer$$anonfun$10.apply(NettyServer.scala:134)
+	at play.core.server.NettyServer$$anonfun$10.apply(NettyServer.scala:131)
+	at scala.Option.map(Option.scala:145)
+	at play.core.server.NettyServer.<init>(NettyServer.scala:131)
+	at play.core.server.NettyServer$.createServer(NettyServer.scala:242)
+	at play.core.server.NettyServer$$anonfun$main$3.apply(NettyServer.scala:279)
+	at play.core.server.NettyServer$$anonfun$main$3.apply(NettyServer.scala:274)
+	at scala.Option.map(Option.scala:145)
+	at play.core.server.NettyServer$.main(NettyServer.scala:274)
+	at play.core.server.NettyServer.main(NettyServer.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at sbt.Run.invokeMain(Run.scala:67)
+	at sbt.Run.run0(Run.scala:61)
+	at sbt.Run.sbt$Run$$execute$1(Run.scala:51)
+	at sbt.Run$$anonfun$run$1.apply$mcV$sp(Run.scala:55)
+	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
+	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
+	at sbt.Logger$$anon$4.apply(Logger.scala:85)
+	at sbt.TrapExit$App.run(TrapExit.scala:248)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:366)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:290)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@48dbce6a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Jun 24, 2015 11:46:15 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 9
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@4851b319, check cycles: false
+Total time: 0 s, completed Jun 24, 2015 11:46:15 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@66c0ca72, check cycles: false
+Exception in thread "sbt-bg-threads-15" java.lang.RuntimeException: Nonzero exit code: 1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy play resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/public/images/favicon.png,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+Copy resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/application.conf,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/application.conf)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/routes)
+Play server process ID is 3047
+This application is already running (Or delete /Users/abarczewski/Documents/workspace/reactive-java8-play/RUNNING_PID file).
+Exception in thread "sbt-bg-threads-16" java.lang.RuntimeException: Nonzero exit code: -1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Total time: 2 s, completed Jun 24, 2015 11:46:17 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@4afda3e0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Jun 24, 2015 11:46:27 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@431a8fc0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy play resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/public/images/favicon.png,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+Copy resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/application.conf,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/application.conf)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/routes)
+Total time: 1 s, completed Jun 24, 2015 11:46:28 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+Play server process ID is 3047
+[info] play - Application started (Prod)
+[info] play - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@6a4288a3, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java)
+
+Read from stdout: Compiling 1 Java source to /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes...
+Compiling 1 Java source to /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@118a4377 directly...
+Java compilation took 0.959161118 s
+Java analysis took 0.497970029 s
+Java compile + analysis took 1.461170783 s
+Invalidating /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java...
+Invalidating (transitively) by inheritance from /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java...
+Initial set of included nodes: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java)
+Invalidated by transitive inheritance dependency: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java)
+The /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java source file has the following regular definitions changed:
+	events.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java
+The following modified names cause invalidation of /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala: Set(events)
+The following modified names cause invalidation of /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala: Set(events)
+New invalidations:
+	Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala)
+Initial set of included nodes: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala)
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala by /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/controllers/routes.java by /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/index.template.scala by /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/controllers/routes.java
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java by /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/index.template.scala
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/main.template.scala by /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/controllers/routes.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala)
+Read from stdout: Compiling 2 Scala sources and 1 Java source to /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes...
+Compiling 2 Scala sources and 1 Java source to /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes...
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Running cached compiler 7bf16f62, interfacing (CompilerInterface) with Scala compiler version 2.10.3
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/classes:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	-classpath
+	/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes:/Users/abarczewski/.ivy2/cache/org.webjars/webjars-play_2.10/jars/webjars-play_2.10-2.2.0.jar:/Users/abarczewski/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.8.jar:/Users/abarczewski/.ivy2/cache/org.webjars/webjars-locator/jars/webjars-locator-0.5.jar:/Users/abarczewski/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-2.3.1.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.webjars/jquery/1.9.0/jars/jquery.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.2.jar:/Users/abarczewski/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar:/Users/abarczewski/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar:/Users/abarczewski/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar:/Users/abarczewski/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar:/Users/abarczewski/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar:/Users/abarczewski/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar:/Users/abarczewski/.ivy2/cache/io.netty/netty/bundles/netty-3.7.0.Final.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar:/Users/abarczewski/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar:/Users/abarczewski/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar:/Users/abarczewski/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/Users/abarczewski/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar:/Users/abarczewski/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/abarczewski/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar:/Users/abarczewski/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/abarczewski/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar:/Users/abarczewski/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/abarczewski/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/abarczewski/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/abarczewski/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/abarczewski/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.2.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar:/Users/abarczewski/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar:/Users/abarczewski/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar:/Users/abarczewski/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar:/Users/abarczewski/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar:/Users/abarczewski/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/abarczewski/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/abarczewski/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar:/Users/abarczewski/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/abarczewski/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar
+Read from stdout: /Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:8: value events is not a member of object controllers.Application
+/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:8: value events is not a member of object controllers.Application
+Read from stdout: GET        /events                        controllers.Application.events()
+GET        /events                        controllers.Application.events()
+Read from stdout: /Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:8: value events is not a member of object controllers.Application
+/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes:8: value events is not a member of object controllers.Application
+Read from stdout: GET        /events                        controllers.Application.events()
+GET        /events                        controllers.Application.events()
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 14 s, completed Jun 24, 2015 11:48:43 AM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@5e5915b0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java, /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala)
+
+Recompiling all 6 sources: invalidated sources (4) exceeded 50.0% of all sources
+Read from stdout: Compiling 4 Scala sources and 2 Java sources to /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes...
+Compiling 4 Scala sources and 2 Java sources to /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes...
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Running cached compiler 4d5cd83a, interfacing (CompilerInterface) with Scala compiler version 2.10.3
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/classes:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	-classpath
+	/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes:/Users/abarczewski/.ivy2/cache/org.webjars/webjars-play_2.10/jars/webjars-play_2.10-2.2.0.jar:/Users/abarczewski/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.8.jar:/Users/abarczewski/.ivy2/cache/org.webjars/webjars-locator/jars/webjars-locator-0.5.jar:/Users/abarczewski/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-2.3.1.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.webjars/jquery/1.9.0/jars/jquery.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.2.jar:/Users/abarczewski/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar:/Users/abarczewski/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar:/Users/abarczewski/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar:/Users/abarczewski/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.2.jar:/Users/abarczewski/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar:/Users/abarczewski/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar:/Users/abarczewski/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar:/Users/abarczewski/.ivy2/cache/io.netty/netty/bundles/netty-3.7.0.Final.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar:/Users/abarczewski/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar:/Users/abarczewski/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar:/Users/abarczewski/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/Users/abarczewski/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar:/Users/abarczewski/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/abarczewski/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar:/Users/abarczewski/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/abarczewski/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar:/Users/abarczewski/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/abarczewski/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/abarczewski/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/abarczewski/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/abarczewski/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/abarczewski/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.2.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar:/Users/abarczewski/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/abarczewski/work/activator-dist-1.3.5/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar:/Users/abarczewski/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar:/Users/abarczewski/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar:/Users/abarczewski/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar:/Users/abarczewski/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar:/Users/abarczewski/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/abarczewski/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/abarczewski/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar:/Users/abarczewski/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/abarczewski/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar
+Scala compilation took 27.083654406 s
+Attempting to call com.sun.tools.javac.api.JavacTool@3238febc directly...
+Java compilation took 0.982678151 s
+Java analysis took 0.650524094 s
+Java compile + analysis took 1.639094793 s
+Invalidating /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala...
+Invalidating (transitively) by inheritance from /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala...
+Initial set of included nodes: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala)
+The /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala source file has the following regular definitions changed:
+	events.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/controllers/routes.java
+None of the modified names appears in /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/index.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/main.template.scala. This dependency is not being considered for invalidation.
+Invalidating /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java...
+Invalidating (transitively) by inheritance from /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java...
+Initial set of included nodes: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java)
+Invalidated by transitive inheritance dependency: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java)
+The /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java source file has the following regular definitions changed:
+	events.
+All member reference dependencies will be considered within this context.
+None of the modified names appears in /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala. This dependency is not being considered for invalidation.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java
+None of the modified names appears in /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala. This dependency is not being considered for invalidation.
+New invalidations:
+	Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/controllers/routes.java)
+Initial set of included nodes: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/controllers/routes.java)
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/index.template.scala by /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/controllers/routes.java
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java by /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/index.template.scala
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala by /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala by /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_routing.scala
+Including /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/views/html/main.template.scala by /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 31 s, completed Jun 24, 2015 11:49:41 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 11
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@792a725, check cycles: false
+Total time: 0 s, completed Jun 24, 2015 11:49:41 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@2f123a5e, check cycles: false
+Exception in thread "sbt-bg-threads-18" java.lang.RuntimeException: Nonzero exit code: 1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/application.conf,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/application.conf)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/routes)
+Copy play resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/public/images/favicon.png,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+Play server process ID is 3047
+This application is already running (Or delete /Users/abarczewski/Documents/workspace/reactive-java8-play/RUNNING_PID file).
+Exception in thread "sbt-bg-threads-19" java.lang.RuntimeException: Nonzero exit code: -1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Total time: 2 s, completed Jun 24, 2015 11:49:43 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@9ed1a34, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Jun 24, 2015 11:49:55 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@70e2a4d6, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy play resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/public/images/favicon.png,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+Copy resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/application.conf,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/application.conf)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/routes)
+Total time: 2 s, completed Jun 24, 2015 11:49:57 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+Play server process ID is 3047
+This application is already running (Or delete /Users/abarczewski/Documents/workspace/reactive-java8-play/RUNNING_PID file).
+Exception in thread "sbt-bg-threads-21" java.lang.RuntimeException: Nonzero exit code: -1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@68bdbe9b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy play resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/public/images/favicon.png,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+Copy resource mappings: 
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/resource_managed/main/public/javascripts/index.min.js,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/public/javascripts/index.min.js)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/application.conf,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/application.conf)
+	(/Users/abarczewski/Documents/workspace/reactive-java8-play/conf/routes,/Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes/routes)
+Total time: 2 s, completed Jun 24, 2015 11:50:08 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+Play server process ID is 3047
+[info] play - Application started (Prod)
+[info] play - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7e984250, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java)
+
+Read from stdout: Compiling 1 Java source to /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes...
+Compiling 1 Java source to /Users/abarczewski/Documents/workspace/reactive-java8-play/target/scala-2.10/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@4cb6ec07 directly...
+Read from stdout: /Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java:18: cannot find symbol
+Read from stdout: symbol: variable logger
+/Users/abarczewski/Documents/workspace/reactive-java8-play/app/controllers/Application.java:18: cannot find symbol
+  symbol: variable logger
+Read from stdout: logger
+logger
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 2 s, completed Jun 24, 2015 12:02:35 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+Done executing sbt server engine, result Right(Exit(0))
+Closing listening server socket
+Waiting for socket thread
+Waiting for request processor thread
+Waiting for command engine result
+Returning control to sbt launcher with result Exit(0)
+Closing the 3047@Mac-mini-026.local logs at Wed Jun 24 12:04:14 CEST 2015, goodbye.
