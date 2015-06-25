@@ -1,4 +1,4 @@
-@(panels: java.util.Map[String, model.CounterPanel], rowSize: Integer, colSize: Integer)
+@(panels: java.util.Map[Integer, model.CounterPanel], rowSize: Integer, colSize: Integer)
 
 @main("Welcome to Play Framework") {
 
@@ -20,7 +20,12 @@
             @for(col <- 1 to colSize) {
                 <div class="col-lg-4" style="text-align : center">
                     <div class="well" style="padding : 10%">
-                        <h4>Conquers: <span id="clickcount@row@col">@panels.get(row.toString.concat(col.toString)).clickCount</span></h4>
+                        <h4>
+                            <span>Conquers: </span>
+                            <span id="clickCount@row@col">
+                                @panels.get(row.toString.concat(col.toString).toInt).clickCount
+                            </span>
+                        </h4>
                         <button type="button" class="btn btn-primary btn-lg" id="button@row@col">Conquer</button>
                     </div>
                 </div>

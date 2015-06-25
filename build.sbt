@@ -17,5 +17,3 @@ initialize := {
   if (sys.props("java.specification.version") != "1.8")
     sys.error("Java 8 is required for this project.")
 }
-
-//fork in run := true
