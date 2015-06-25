@@ -5,7 +5,6 @@ $ ->
   ws.onopen = () ->
     console.log('Opening a connection...')
     window.identified = false
-    console.log(window.self)
 
   ws.onmessage = (message) ->
     data = JSON.parse(message.data)
